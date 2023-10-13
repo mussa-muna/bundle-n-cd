@@ -1,0 +1,12 @@
+# Ignore Node.js modules
+node_modules/
+
+# Ignore logs and other generated files
+logs/
+*.log
+
+# Ignore npm's debug log
+npm-debug.log*
+
+# Ignore the .env file
+.env
