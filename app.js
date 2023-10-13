@@ -1,17 +1,15 @@
-const express = require('express');
+const express = require("express");
 const app = express();
+const port = 3000;
 
-app.get('/', (req, res) => {
-  res.send('Hello, World!');
+app.get("/", (req, res) => {
+  res.send("Hello World");
 });
 
-// Add the "/name" route
-app.get('/name/:name', (req, res) => {
-    const { name } = req.params;
-    res.send(`Hello, ${name}!`);
-  });
+app.get("/test", (req, res) => {
+  res.send("Test Route!");
+});
 
-const port = 3000;
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+  console.log(`Example app listening on port ${port}`);
 });
